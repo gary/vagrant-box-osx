@@ -6,6 +6,6 @@ vagrant halt
 VBoxManage snapshot "$osxbox_vmname" restore Fresh
 vagrant reload
 vagrant up
-vagrant ssh -c 'ln -s /src/etc/bootstrap.sh .'
+vagrant ssh -c 'ln -s /src/etc/{bootstrap,test}.sh .'
 
 vagrant ssh
